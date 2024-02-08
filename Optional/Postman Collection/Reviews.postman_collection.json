@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "3f7182ce-92be-4156-8f6a-d6eeb4518120",
+		"name": "Reviews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19641226"
+	},
+	"item": [
+		{
+			"name": "ReviewAdd 01",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\": \"5\",\r\n    \"review\": \"Desiagn and deploy robust state-of-the-art web applications \",\r\n    \"rating\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews"
+					],
+					"query": [
+						{
+							"key": "Book Title",
+							"value": "Designing Data-Intensive Applications",
+							"disabled": true
+						},
+						{
+							"key": "Author",
+							"value": "Martin Kleppmann",
+							"disabled": true
+						},
+						{
+							"key": "Reviews",
+							"value": "Data is at the center of many challenges in system design today. Difficult issues need to be figured out!",
+							"disabled": true
+						},
+						{
+							"key": "Rating",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewAdd 02",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\": \"1\",\r\n    \"review\": \"Python Crash Course is the world's best-selling guide to the Python guide programming language, with over 1,500,000 copies sold to date!\",\r\n    \"rating\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewAdd 03",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\": \"3\",\r\n    \"review\": \"Data is at the center of many challenges in system design today. Difficult issues need to be figured out\",\r\n    \"rating\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewAdd 04",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\": \"4\",\r\n    \"review\": \"In alignment with BCS AI Foundation and Essentials certificates, this introductory guide provides the understanding you need to start building artificial intelligence.\",\r\n    \"rating\": \"4.5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewsGet All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewRetrieve by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNzQxMzAxMywianRpIjoiNDcwZDU3YjItMjBkMi00ZDlkLWFiOTQtZWJhMmEzYmU5MTdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzA3NDEzMDEzLCJjc3JmIjoiNmEwYTNjOGEtZDVhMi00OGM3LWJlODEtY2IyMGE1OTJmYjE2IiwiZXhwIjoxNzA3NDEzOTEzfQ.ECgE8jVJhabIxc2A7fRBMPC-v0nObV-BMKZjWUplg0Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"review\": \"Whatever\",\r\n    \"rating\": \"0.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReviewDelete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNzQxMzAxMywianRpIjoiNDcwZDU3YjItMjBkMi00ZDlkLWFiOTQtZWJhMmEzYmU5MTdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzA3NDEzMDEzLCJjc3JmIjoiNmEwYTNjOGEtZDVhMi00OGM3LWJlODEtY2IyMGE1OTJmYjE2IiwiZXhwIjoxNzA3NDEzOTEzfQ.ECgE8jVJhabIxc2A7fRBMPC-v0nObV-BMKZjWUplg0Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/reviews/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"reviews",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

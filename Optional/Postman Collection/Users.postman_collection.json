@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "3a635ebb-b5f3-4284-9497-b03fd20f523c",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19641226"
+	},
+	"item": [
+		{
+			"name": "Register - Create New Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mohammed Ahmed\",\r\n    \"password\": \"123myPassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mohammed Ahmed\",\r\n    \"password\": \"123myPassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNzQxMzAxMywianRpIjoiNDcwZDU3YjItMjBkMi00ZDlkLWFiOTQtZWJhMmEzYmU5MTdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzA3NDEzMDEzLCJjc3JmIjoiNmEwYTNjOGEtZDVhMi00OGM3LWJlODEtY2IyMGE1OTJmYjE2IiwiZXhwIjoxNzA3NDEzOTEzfQ.ECgE8jVJhabIxc2A7fRBMPC-v0nObV-BMKZjWUplg0Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve - Get User by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNzQxMzAxMywianRpIjoiNDcwZDU3YjItMjBkMi00ZDlkLWFiOTQtZWJhMmEzYmU5MTdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzA3NDEzMDEzLCJjc3JmIjoiNmEwYTNjOGEtZDVhMi00OGM3LWJlODEtY2IyMGE1OTJmYjE2IiwiZXhwIjoxNzA3NDEzOTEzfQ.ECgE8jVJhabIxc2A7fRBMPC-v0nObV-BMKZjWUplg0Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete - User by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNzQxMzAxMywianRpIjoiNDcwZDU3YjItMjBkMi00ZDlkLWFiOTQtZWJhMmEzYmU5MTdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzA3NDEzMDEzLCJjc3JmIjoiNmEwYTNjOGEtZDVhMi00OGM3LWJlODEtY2IyMGE1OTJmYjE2IiwiZXhwIjoxNzA3NDEzOTEzfQ.ECgE8jVJhabIxc2A7fRBMPC-v0nObV-BMKZjWUplg0Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
